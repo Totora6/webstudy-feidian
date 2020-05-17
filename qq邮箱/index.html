@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>   <!--根元素，还包含整个页面内容-->
+    <meta charset="utf-8">
+    <style type="text/css"> 
+        @import "style.css"; /*html连接css*/
+        *{/*解决文字行间距过大的问题*/
+            padding:0;
+            margin:0;
+        }
+    </style>
+    <title>登录QQ邮箱</title> <!--设置页面标题-->
+    <body>
+        <div class="header">
+            <img src="tubiao.png">
+            <!--在元素<img>所在位置插入一张指定的图片-->
+            <nav>
+                <a href="#">基本版</a> |
+                <!--<a>可定义锚以及超链接-->
+                <!--href属性声明超链接的web地址-->
+                <a href="#">English</a> | 
+                <a href="#">手机版</a> | 
+                <a href="#">企业邮箱</a>
+            </nav>
+        </div><!--定义文档中的分区或节-->
+        <div class="content">
+            <div class="text">
+                <h1>QQ邮箱，常联系！</h1><!--标题元素-->
+                <p>世界那么大，</p>
+                <p>人生那么长，</p>
+                <p>总有那么一个人，</p>
+                <p>想让你温柔以待。</p>
+                <p>——宫崎骏《哈尔的移动城堡》</p>
+            </div>
+            <div class="pic">
+                    <img src="picture.png" width="240" height="270"> 
+            </div>
+            <div class="login">
+                <ul class="sidebar"><!--无序列表-->
+                    <li class="tab1">微信登录</li><!--定义列表项目-->
+                    <li class="tab2">QQ登录</li>
+                </ul>
+                <input type="text" placeholder="&nbsp;&nbsp;支持QQ号/邮箱/手机号登录" class="acount" /><br>
+                <!--<input>输入框  <br>换行-->
+                <!--text:定义单行的输入字段，用户可在其中输入文本。默认宽度为 20 个字符-->
+                <input type="password" placeholder="&nbsp;&nbsp;QQ密码" class="password" /><br>
+                <!--password:定义密码字段。该字段中的字符被掩码-->
+                <input type="checkbox" class="checkbox" />
+                <!--checkbox:定义复选框-->
+                <p>下次自动登录</p><br>
+                <input type="submit" value="登&nbsp;录" class="submit">
+                <!--submit:定义提交按钮。提交按钮会把表单数据发送到服务器-->
+                <nav>
+                    <a href="#" class="forget">忘了密码？</a>
+                    <a href="#" class="new">注册新账号</a>
+                </nav>
+            </div>
+        </div>
+        <div class="footer">
+                <p><a href="#">关于腾讯</a> | <a href="#">服务条款</a> | <a href="#">隐私政策</a> | <a href="#">客服中心</a> | <a href="#">联系我们</a> | <a href="#">帮助中心</a> | ©1998 - 2010 Tencent Inc. All Rights Reserved.</p>
+        </div>
+    </body>
+</html>
